@@ -1,5 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
+import App from './App.js'
+
 
 const Header = (props) => {
   return (
@@ -31,7 +33,7 @@ const Total = (props) => {
 }
 
 
-
+/*
 const App = () => {
   const course = {
     name: 'Half Stack application development',
@@ -51,15 +53,16 @@ const App = () => {
     ]
   }
 
+  const result = course.parts.map(courses => courses.name)
+  console.log(result)
   return (
     <div>
+      <h1>Courses</h1>
       <Header course={course.name} />
-      <p>
       <Content parts={course.parts}/>
-      </p>
       <Total parts={course.parts} />
     </div>
   )
 }
-
+*/
 ReactDOM.render(<App />, document.getElementById('root'))
